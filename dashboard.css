@@ -1464,6 +1464,15 @@ body[data-theme="dark"] .on-time-label {
 
 
 @media (max-width: 600px) {
+  .dashboard-main-grid,
+  .dashboard-side-column,
+  .metric-grid,
+  .complaints-list,
+  .complaint-row {
+    width: 100%;
+    min-width: 0;
+  }
+
   .dashboard-header h1 {
     overflow-wrap: anywhere;
   }
