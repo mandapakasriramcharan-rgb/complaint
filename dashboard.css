@@ -1463,6 +1463,24 @@ body[data-theme="dark"] .on-time-label {
 }
 
 
+@media (max-width: 600px) {
+  .dashboard-header h1 {
+    overflow-wrap: anywhere;
+  }
+
+  .service-banner p,
+  .metric-note,
+  .complaint-main,
+  .complaint-route {
+    overflow-wrap: anywhere;
+  }
+
+  .notification-panel {
+    width: min(320px, calc(100vw - 30px));
+  }
+}
+
+
 /* =========================================================
    ACCESSIBILITY
    ========================================================= */

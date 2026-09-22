@@ -3274,6 +3274,73 @@ body[data-theme="green"] {
 
 
 /* =========================================================
+   PHONE LAYOUT SAFEGUARDS
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .app-topbar,
+  .topbar {
+    min-height: 64px;
+    gap: 10px;
+  }
+
+  .app-topbar-title,
+  .topbar-title {
+    min-width: 0;
+  }
+
+  .app-topbar-title strong,
+  .topbar-title strong {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .app-topbar-left {
+    min-width: 0;
+  }
+
+  .app-topbar-left,
+  .topbar-actions {
+    flex-shrink: 1;
+  }
+
+  .sidebar {
+    width: min(var(--sidebar-width), 86vw);
+  }
+
+  .page-content,
+  .app-content {
+    min-width: 0;
+  }
+
+  .btn {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .smart-assist-content p,
+  .form-card-header p {
+    overflow-wrap: anywhere;
+  }
+
+  .textarea-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+}
+
+
+/* =========================================================
    41. REDUCED MOTION
    ========================================================= */
 
